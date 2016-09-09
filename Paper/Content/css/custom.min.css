@@ -1,0 +1,681 @@
+﻿body {
+    padding-top: 50px;
+}
+
+    body > .navbar {
+        -webkit-transition: background-color .3s ease-in;
+        transition: background-color .3s ease-in;
+    }
+
+@media (min-width:768px) {
+    body > .navbar-transparent {
+        background-color: transparent;
+    }
+
+        body > .navbar-transparent .navbar-nav > .open > a {
+            background-color: transparent !important;
+        }
+}
+
+#home {
+    padding-top: 0;
+}
+
+    #home .navbar-brand {
+        padding: 13.5px 15px 12.5px;
+    }
+
+        #home .navbar-brand > img {
+            display: inline;
+            margin: 0 10px;
+            height: 100%;
+        }
+
+#banner {
+    min-height: 300px;
+    border-bottom: none;
+}
+
+.table-of-contents {
+    margin-top: 1em;
+}
+
+.page-header h1 {
+    font-size: 4em;
+}
+
+.bs-docs-section {
+    margin-top: 6em;
+}
+
+    .bs-docs-section h1 {
+        padding-top: 100px;
+    }
+
+.bs-component {
+    position: relative;
+}
+
+    .bs-component .modal {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        z-index: 1;
+        display: block;
+    }
+
+    .bs-component .modal-dialog {
+        width: 90%;
+    }
+
+    .bs-component .popover {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        margin: 20px;
+    }
+
+#source-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-weight: 700;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.progress {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 5em 0;
+}
+
+    footer li {
+        float: left;
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    footer p {
+        clear: left;
+        margin-bottom: 0;
+    }
+
+.splash {
+    padding: 9em 0 2em;
+    background-color: #141d27;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+    .splash .logo {
+        width: 160px;
+    }
+
+    .splash h1 {
+        font-size: 3em;
+    }
+
+    .splash #social {
+        margin: 2em 0;
+    }
+
+    .splash .alert {
+        margin: 2em 0;
+    }
+
+.section-tout {
+    padding: 4em 0 3em;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    background-color: #eaf1f1;
+}
+
+    .section-tout .fa {
+        margin-right: .5em;
+    }
+
+    .section-tout p {
+        margin-bottom: 3em;
+    }
+
+.section-preview {
+    padding: 4em 0 4em;
+}
+
+    .section-preview .preview {
+        margin-bottom: 4em;
+        background-color: #eaf1f1;
+    }
+
+        .section-preview .preview .image {
+            position: relative;
+        }
+
+            .section-preview .preview .image:before {
+                box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                pointer-events: none;
+            }
+
+        .section-preview .preview .options {
+            padding: 1em 2em 2em;
+            border: 1px solid rgba(0,0,0,.05);
+            border-top: none;
+            text-align: center;
+        }
+
+            .section-preview .preview .options p {
+                margin-bottom: 2em;
+            }
+
+    .section-preview .dropdown-menu {
+        text-align: left;
+    }
+
+    .section-preview .lead {
+        margin-bottom: 2em;
+    }
+
+@media (max-width:767px) {
+    .section-preview .image img {
+        width: 100%;
+    }
+}
+
+.sponsor #carbonads {
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+.sponsor .carbon-text {
+    display: block;
+    margin-top: 1em;
+    font-size: 12px;
+}
+
+.sponsor .carbon-poweredby {
+    float: right;
+    margin-top: 1em;
+    font-size: 10px;
+}
+
+@media (max-width:767px) {
+    .splash {
+        padding-top: 4em;
+    }
+
+        .splash .logo {
+            width: 100px;
+        }
+
+        .splash h1 {
+            font-size: 2em;
+        }
+
+    #banner {
+        margin-bottom: 2em;
+        text-align: center;
+    }
+}
+
+/* spinner */
+
+.spinner {
+  width: 100%;
+}
+.spinner input {
+  /*text-align: right;*/
+  width : 100%
+}
+
+
+.input-group-spinner {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.input-group-spinner > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+
+.input-group-spinner > .btn:first-child {
+  border-top-right-radius: 4px;
+      margin-bottom: 3px;
+}
+.input-group-spinner > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+
+.input-group-spinner i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+/* scoll to top **/
+
+.cd-top {
+  /*display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  // image replacement properties 
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;*/
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+#topcontrol
+{
+    background: #E17000;
+    color: #fff;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    right: 14px!important;
+    bottom: 11px!important;
+    border-radius: 3px!important;
+
+}
+
+#topcontrol:after {
+    top: -3px;
+    left: 8.5px;
+    content: "\f106";
+    position: absolute;
+    text-align: center;
+    font-family: FontAwesome;
+}
+
+/* custom css style */
+
+.margin-right
+{
+    margin-right : 10px;
+}
+
+.right
+{
+    text-align: right;
+    float :right;
+}
+
+.blank
+{
+    height:10px;
+}
+
+
+.page-header
+{
+    margin-bottom: 15px;														
+}
+
+#banner
+{
+    min-height:unset;
+}
+
+.nopad
+{
+    padding-left : 0;   
+    padding-right : 0;
+}
+
+option[value=""][disabled] {
+  display: none;
+  color:red;
+}
+
+@media (min-width: 1300px) {
+
+     .col3-resize 
+    {
+        width : 270px;
+    }
+
+
+    .col6-resize 
+    {
+        width : 560px;
+    }
+
+    .form-col6-resize 
+    {
+        width : 48%;
+    }
+
+    .form-col12-col6-resize 
+    {
+        width : 49.1%;
+    }
+
+     .col4-resize 
+    {
+        width : 30.6%;
+    }
+    
+    .form-col12-col4-resize 
+    {
+        width : 32%;
+    }
+    .margin-right
+    {    
+        margin-right : 20px;
+    }
+
+    .form-margin-right
+    {    
+        margin-right : 19px;
+    }
+
+    .col3-margin-right
+    {    
+        margin-right : 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .col6-resize 
+    {
+        /*width : 48%;*/
+    }
+
+     .col4-resize 
+    {
+        /*width : 30.6%;*/
+    }
+
+    .margin-right
+    {    
+        margin-right : 0;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .col6-resize 
+    {
+        /*width : 48%;*/
+    }
+
+     .col4-resize 
+    {
+        /*width : 30.6%;*/
+    }
+
+    .margin-right
+    {    
+        margin-right : 0;
+    }
+
+}
+
+
+
+.back
+{
+    float:left;
+}
+
+.progress-bar:last-child {
+     border-radius: 0 0 0 0;
+}
+
+.pad-btm
+{
+    padding-bottom: 20px;
+}
+
+
+.input-group-addon:last-child {
+    padding-left: 0;
+    padding-right: 0;
+    width : 20px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.dropdown-menu {
+    min-width: 98%;
+}
+
+.nobtm
+{
+    margin-bottom: 0;
+}
+
+.rotrate-270
+{
+    transform: rotate(270deg);
+}
+
+.rotrate-90
+{
+    transform: rotate(90deg);
+}
+
+
+/*
+ * Glyphicons
+ *
+ * Special styles for displaying the icons and their classes in the docs.
+ */
+
+
+.bs-glyphicons {
+  margin: 5px 0 20px;
+  overflow: hidden;
+
+}
+.bs-glyphicons-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.bs-glyphicons-li {
+
+    cursor: pointer;
+
+  float: left;
+    width: 16.5%;
+  /*height: 115px;*/
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.4;
+  text-align: center;
+  /*background-color: #f9f9f9;*/
+  background-color:#ffffff;
+  border: 1px solid  #f9f9f9;
+}
+
+.bs-glyphicons .glyphicon {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+.bs-glyphicons .gly-class {
+  display: block;
+  text-align: center;
+  word-wrap: break-word; /* Help out IE10+ with class names */
+  margin-bottom: 5px;
+}
+.bs-glyphicons li:hover {
+  color: #fff;
+  background-color:dodgerblue;
+}
+
+@media (max-width: 873px) {
+
+      .bs-glyphicons .glyphicon {
+      margin-top: 10px;
+
+    }
+
+
+  .bs-glyphicons li {
+  
+     width: 16.5%;
+    font-size: 12px;
+      height: 90px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .bs-glyphicons .glyphicon {
+      margin-top: 10px;
+
+    }
+
+
+  .bs-glyphicons li {
+    width: 33%;
+    font-size: 12px;
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 1300px) {
+
+  .bs-glyphicons li {
+    
+     width: 16.5%;
+    font-size: 12px;
+  }
+}
+
+
+.glyp-active 
+{
+      color: #fff;
+  background-color:dodgerblue;
+}
+
+.centre
+{
+    margin: 5px 5px 5px 5px;
+}
+
+
+.blue
+{
+    background-color:#00bcd4;
+    color:white;
+
+}
+
+.orange
+{
+    background-color:#ff9800;
+     color:white;
+}
+
+.red
+{
+
+     background-color:#ab0d2b;
+     color:white;
+}
+
+.green
+{
+     background-color:#8bc34a;
+     color:white;
+}
+
+.white
+{
+        background-color:#fff;
+}
+
+.np-progress
+{
+    height: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*.form-control
+{
+    background-color:white;
+}*/
