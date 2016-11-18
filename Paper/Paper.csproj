@@ -143,9 +143,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Bicycl.cs" />
+    <Compile Include="Models\Capa.cs" />
     <Compile Include="Models\Genr.cs" />
     <Compile Include="Models\Geome.cs" />
+    <Compile Include="Models\Loss.cs" />
     <Compile Include="Models\Signr.cs" />
+    <Compile Include="Models\Oppsr.cs" />
     <Compile Include="Models\Volm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

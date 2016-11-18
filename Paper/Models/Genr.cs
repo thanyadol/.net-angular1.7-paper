@@ -5,6 +5,7 @@ using System.Web;
 
 namespace Default
 {
+    //sh1 - input class
     public class Genr
     {
         public string Analyst { get; set; }
@@ -16,18 +17,35 @@ namespace Default
         public string Period { get; set; }
 
         public decimal StationFlow { get; set; }
-        public decimal Crosswork { get; set; }
+        public decimal Crosswalk { get; set; }
 
-        public decimal HeavyL1L2 { get; set; }
-        public decimal HeavyL3L4 { get; set; }
+        //Heavy-vehicle (%) 
+        public decimal HvL1L2 { get; set; }
+        public decimal HvL3L4 { get; set; }
+
 
     }
 
     public class Cart
     {
+        //last result, Intersection delay
+        public decimal dI { get; set; }
+        public decimal sumDA { get; set; }
+        public decimal sumVA { get; set; }
+
+        public string dISTR { get; set; }
+
+        //component list
         public Genr genr { get; set; }
         public List<Geome> geolist { get; set; }
         public List<Volm> volmlist { get; set; }
+        public List<Oppsr> opposelist { get; set; }
+        public List<Bicycl> bicyclelist { get; set; }
         public List<Signr> signllist { get; set; }
+
+        public List<Phsr> phaselist { get; set; }
+
+
+        public List<Loss> losslist { get; set; }
     }
 }
